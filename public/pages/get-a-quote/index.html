@@ -340,7 +340,6 @@ img{max-width:100%}
 <input type="hidden" name="access_key" value="0c2d3eaf-75ee-4b96-b2c6-b44e739abf55">
 <input type="hidden" name="subject" value="New quote request - Prestige Tattoos website">
 <input type="hidden" name="from_name" value="Prestige Tattoos website">
-<input type="hidden" name="redirect" value="https://prestigetattoosoakham.co.uk/pages/get-a-quote/?sent=1">
 <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
       <h2 class="tq-form-title">Get a Quote</h2>
 
@@ -502,7 +501,23 @@ img{max-width:100%}
     rebuildBody();
   });
 
-if(/[?&]sent=1/.test(location.search)){var s=document.getElementById('tq-sent');if(s)s.style.display='block';}
+(function(){
+ var f=document.getElementById('tq-form'),ok=document.getElementById('tq-sent'),btn=document.getElementById('tq-submit-btn');
+ var err=document.createElement('div');err.className='tq-error';err.style.display='none';err.textContent='Something went wrong. Please try again or call us on +44 7747 369796.';f.insertBefore(err,f.firstChild);
+ f.addEventListener('submit',function(e){
+  if(e.defaultPrevented){return;}
+  e.preventDefault();
+  var prev=btn.textContent;btn.disabled=true;btn.textContent='SENDING...';err.style.display='none';
+  fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+   .then(function(r){return r.json();})
+   .then(function(d){
+     if(d.success){f.reset();document.getElementById('tq-upload-text').textContent='Choose files';document.getElementById('tq-upload-status').innerHTML='';ok.style.display='block';ok.scrollIntoView({behavior:'smooth',block:'center'});}
+     else{err.style.display='block';}
+   })
+   .catch(function(){err.style.display='block';})
+   .then(function(){btn.disabled=false;btn.textContent=prev;});
+ });
+})();
 </script>
 </body>
 </html>
