@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery | Prestige Tattoos Oakham</title>
+<meta name="description" content="Tattoo portfolio from Prestige Tattoos Oakham.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_64,h_64,c_fit/prestige/logo_final.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#000;color:#e0e0e0;font-family:'Space Grotesk',sans-serif;font-size:14px;line-height:1.5}
+a{color:inherit}
+img{max-width:100%}
+.site-header{position:sticky;top:0;z-index:1000;background:rgba(0,0,0,.92);backdrop-filter:blur(6px);border-bottom:1px solid #1c1c1c}
+.site-header-inner{max-width:1400px;margin:0 auto;height:62px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.site-logo img{height:42px;width:auto;display:block}
+.site-nav{display:flex;gap:4px;flex-wrap:wrap;justify-content:center}
+.site-nav a{color:#ddd;text-decoration:none;font-size:12px;letter-spacing:1px;text-transform:uppercase;padding:8px 11px;border-radius:4px;transition:color .2s}
+.site-nav a:hover,.site-nav a.active{color:#c9a84c}
+.nav-toggle{display:none;background:none;border:1px solid #333;border-radius:4px;color:#c9a84c;font-size:22px;line-height:1;padding:6px 11px;cursor:pointer}
+@media(max-width:1100px){
+ .nav-toggle{display:block}
+ .site-nav{display:none;position:absolute;top:62px;left:0;right:0;background:#000;border-bottom:1px solid #222;flex-direction:column;padding:10px 24px 18px;gap:0}
+ .site-nav.open{display:flex}
+ .site-nav a{padding:13px 0;font-size:14px;border-bottom:1px solid #151515;border-radius:0}
+}
+@keyframes slowZoom{0%{transform:scale(1)}100%{transform:scale(1.12)}}
+@keyframes logoShimmer{0%,100%{filter:drop-shadow(0 0 6px rgba(201,168,76,.25)) brightness(1)}50%{filter:drop-shadow(0 0 18px rgba(245,212,133,.6)) brightness(1.12)}}
+@keyframes btnShimmer{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+@keyframes scrollStrip{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+
+  .footer-custom {
+    background: transparent !important;
+    color: #fff !important;
+    text-align: center !important;
+    padding: 40px 20px !important;
+    border-top: 1px solid #222 !important;
+  }
+  .footer-logo {
+    margin-bottom: 25px !important;
+  }
+  .footer-logo-img {
+    height: 100px !important;
+    width: auto !important;
+    display: block !important;
+    margin: 0 auto 12px !important;
+    object-fit: contain !important;
+  }
+  .footer-tagline {
+    font-family: 'Cinzel', serif !important;
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
+    color: #c9a84c !important;
+    margin-bottom: 0 !important;
+    text-transform: uppercase !important;
+  }
+  .footer-nav {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    margin-bottom: 20px !important;
+  }
+  .footer-nav a {
+    color: #aaa !important;
+    text-decoration: none !important;
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    padding: 5px 12px !important;
+    border: 1px solid #333 !important;
+    border-radius: 20px !important;
+    transition: all 0.2s !important;
+  }
+  .footer-nav a:hover {
+    border-color: #c9a84c !important;
+    color: #c9a84c !important;
+  }
+  .footer-social {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    margin-top: 15px !important;
+  }
+  .footer-social a {
+    color: #555 !important;
+    text-decoration: none !important;
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    transition: color 0.2s !important;
+  }
+  .footer-social a:hover {
+    color: #c9a84c !important;
+  }
+
+
+  
+  .gallery-wrapper {
+    background: #000 !important;
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    padding: 60px 30px !important;
+  }
+  .gallery-header {
+    text-align: center !important;
+    margin-bottom: 50px !important;
+  }
+  .gallery-wrapper .gallery-title {
+    font-family: 'Cinzel', serif !important;
+    font-size: 48px !important;
+    font-weight: 400 !important;
+    letter-spacing: 4px !important;
+    color: #fff !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+  .gallery-divider {
+    width: 60px !important;
+    height: 1px !important;
+    background: #c9a84c !important;
+    margin: 0 auto !important;
+  }
+  .gallery-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px !important;
+    margin-top: 40px !important;
+  }
+  .gallery-item {
+    overflow: hidden !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    -webkit-tap-highlight-color: transparent !important;
+    border: 1px solid #222 !important;
+  }
+  .gallery-item img {
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: cover !important;
+    display: block !important;
+    transition: transform 0.3s ease !important;
+    pointer-events: none !important;
+  }
+  .gallery-item:hover img {
+    transform: scale(1.05) !important;
+  }
+  .gallery-item:hover {
+    border-color: #c9a84c !important;
+  }
+  @media (max-width: 768px) {
+    .gallery-wrapper { padding: 30px 15px !important; }
+    .gallery-title { font-size: 30px !important; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header"><div class="site-header-inner">
+<a class="site-logo" href="/"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,h_120/prestige/logo_final.png" alt="Prestige Tattoos Oakham"></a>
+<button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+<nav class="site-nav" id="nav"><a href="/">Home</a><a href="/pages/contact/">Contact</a><a href="/pages/get-a-quote/">Get a Quote</a><a href="/pages/about-us/">About Us</a><a href="/pages/gallery/" class=active>Gallery</a><a href="/pages/artists/">Artists</a><a href="/pages/tattoo-guidelines/">Tattoo Guidelines</a><a href="/pages/terms-and-conditions/">Terms and Conditions</a></nav>
+</div></header>
+<main>
+<div class="gallery-wrapper">
+  <div class="gallery-header">
+    <h1 class="gallery-title">Our Work</h1>
+    <div class="gallery-divider"></div>
+  </div>
+
+  <div class="gallery-grid" id="galleryGrid">
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/490323373_1232496475543997_1713982480207103673_n"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/490323373_1232496475543997_1713982480207103673_n" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/492216438_1245678627559115_8403981081481845377_n"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/492216438_1245678627559115_8403981081481845377_n" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/482316021_18039386255402043_4292624238633140180_n"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/482316021_18039386255402043_4292624238633140180_n" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0025"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0025" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0009"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0009" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0017"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0017" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0018"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0018" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0013"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0013" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0014"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0014" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0003"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0003" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0016"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0016" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0022"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0022" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0024"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0024" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0027"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0027" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0015"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0015" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0029"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0029" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0021"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0021" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0008"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0008" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0034"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0034" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0020"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0020" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0002"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0002" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0019"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0019" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0026"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0026" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0001"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0001" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0005"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0005" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0031"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0031" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0033"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0033" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0006"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0006" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0023"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0023" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0011"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0011" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0010"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0010" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0004"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0004" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+    <div class="gallery-item" data-full="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_1800/prestige/20260514_0012"><img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/20260514_0012" alt="Tattoo by Prestige Tattoos Oakham" loading="lazy"></div>
+  </div>
+</div>
+
+<div id="lbOverlay" style="display:none; position:fixed; z-index:999999; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.95); justify-content:center; align-items:center;">
+  <span id="lbClose" style="position:fixed; top:20px; right:30px; color:#fff; font-size:35px; cursor:pointer; z-index:9999999; padding:10px;">✕</span>
+  <button id="lbLeft" style="position:fixed; left:20px; top:50%; transform:translateY(-50%); background:rgba(201,168,76,0.2); border:1px solid rgba(201,168,76,0.5); color:#c9a84c; font-size:35px; width:55px; height:55px; border-radius:50%; cursor:pointer; z-index:9999999; display:flex; align-items:center; justify-content:center; line-height:1; padding:0;">&#8249;</button>
+  <img id="lbImg" src="" alt="Tattoo" style="max-width:85vw; max-height:85vh; object-fit:contain; border-radius:4px;">
+  <button id="lbRight" style="position:fixed; right:20px; top:50%; transform:translateY(-50%); background:rgba(201,168,76,0.2); border:1px solid rgba(201,168,76,0.5); color:#c9a84c; font-size:35px; width:55px; height:55px; border-radius:50%; cursor:pointer; z-index:9999999; display:flex; align-items:center; justify-content:center; line-height:1; padding:0;">&#8250;</button>
+  <div id="lbCounter" style="position:fixed; bottom:20px; left:50%; transform:translateX(-50%); color:#c9a84c; font-size:14px; z-index:9999999;"></div>
+</div>
+</main>
+<div class="footer-custom">
+  <div class="footer-logo">
+    <img src="https://res.cloudinary.com/dmywrbnwy/image/upload/f_auto,q_auto,w_700/prestige/logo_final" alt="Prestige Tattoos" class="footer-logo-img">
+    <p class="footer-tagline">Premium Tattoo Studio in Oakham</p>
+  </div>
+  <nav class="footer-nav">
+    <a href="/pages/about-us/">About Us</a>
+    <a href="/pages/get-a-quote/">Get a Quote</a>
+    <a href="/pages/gallery/">Gallery</a>
+    <a href="/pages/artists/">Artists</a>
+    <a href="/pages/contact/">Contact</a>
+    <a href="/pages/tattoo-guidelines/">Tattoo Guidelines</a>
+    <a href="/pages/terms-and-conditions/">Terms &amp; Conditions</a>
+  </nav>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/prestige_tattoos_oakham/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/prestigetattoos" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</div>
+<script>
+  var images = [];
+  var currentIndex = 0;
+
+  var overlay = document.getElementById('lbOverlay');
+  var lbImg = document.getElementById('lbImg');
+  var lbCounter = document.getElementById('lbCounter');
+  var lbClose = document.getElementById('lbClose');
+  var lbLeft = document.getElementById('lbLeft');
+  var lbRight = document.getElementById('lbRight');
+
+  function openLightbox(index) {
+    currentIndex = index;
+    lbImg.src = images[currentIndex];
+    lbCounter.textContent = (currentIndex + 1) + ' / ' + images.length;
+    overlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    overlay.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+  function moveLight(dir) {
+    currentIndex = (currentIndex + dir + images.length) % images.length;
+    lbImg.src = images[currentIndex];
+    lbCounter.textContent = (currentIndex + 1) + ' / ' + images.length;
+  }
+
+  lbClose.onclick = closeLightbox;
+  lbLeft.onclick = function(e) { e.stopPropagation(); moveLight(-1); };
+  lbRight.onclick = function(e) { e.stopPropagation(); moveLight(1); };
+  overlay.onclick = function(e) { if (e.target === overlay) closeLightbox(); };
+
+  document.addEventListener('keydown', function(e) {
+    if (overlay.style.display !== 'flex') return;
+    if (e.key === 'ArrowLeft') moveLight(-1);
+    if (e.key === 'ArrowRight') moveLight(1);
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  var touchStartX = 0;
+  overlay.addEventListener('touchstart', function(e) {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  overlay.addEventListener('touchend', function(e) {
+    var diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) moveLight(diff > 0 ? 1 : -1);
+  }, { passive: true });
+
+  function initGallery() {
+    var items = document.querySelectorAll('.gallery-item');
+    items.forEach(function(item, index) {
+      var img = item.querySelector('img');
+      images.push(item.getAttribute("data-full")||img.src);
+
+      var startY = 0;
+      var startX = 0;
+      var moved = false;
+
+      item.addEventListener('touchstart', function(e) {
+        startY = e.touches[0].clientY;
+        startX = e.touches[0].clientX;
+        moved = false;
+      }, { passive: true });
+
+      item.addEventListener('touchmove', function(e) {
+        if (Math.abs(e.touches[0].clientY - startY) > 10 || Math.abs(e.touches[0].clientX - startX) > 10) {
+          moved = true;
+        }
+      }, { passive: true });
+
+      item.addEventListener('touchend', function(e) {
+        if (!moved) {
+          openLightbox(index);
+        }
+      }, { passive: true });
+
+      item.onclick = function() { openLightbox(index); };
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initGallery);
+  } else {
+    initGallery();
+  }
+</script>
+</body>
+</html>
